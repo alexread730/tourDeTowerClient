@@ -17,15 +17,15 @@ const AppRoute = () => {
   return (
     <Router>
       <div>
-        <Header />
         <Route path="/" component={App} />
         <Route path="/tower/:id" component={TowerDetail} />
-        <Footer />
       </div>
     </Router>
   );
 }
 
+ReactDOM.render(<Header/>, document.getElementById('header'));
 ReactDOM.render(<AppRoute/>, document.getElementById('root'));
+ReactDOM.render(<Footer/>, document.getElementById('footer'));
 
 registerServiceWorker();
