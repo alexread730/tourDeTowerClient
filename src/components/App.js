@@ -4,9 +4,6 @@ import SplashPage from './SplashPage';
 import TowerList from './TowerList';
 
 class App extends Component {
-
-<<<<<<< HEAD
-=======
   constructor(props) {
     super(props);
 
@@ -22,7 +19,6 @@ class App extends Component {
       towers: res
     }))
   }
->>>>>>> 95abbde5df2e522245c616b96807de066a879051
 
   render() {
     return (
