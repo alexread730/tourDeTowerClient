@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import { Container, Row, Col } from 'reactstrap';
 
 import TowerThumb from './TowerThumb';
 
@@ -7,11 +8,18 @@ class TowerList extends Component {
     super(props);
 
   }
+
   render() {
+    console.log(this.props.towers);
     return (
-      <div>
-        <TowerThumb />
-      </div>
+      <Container>
+        
+
+          <TowerThumb towers={this.props.towers}/>
+
+
+
+      </Container>
     );
   }
 }
