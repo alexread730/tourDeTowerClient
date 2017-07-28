@@ -74,3 +74,13 @@ a:hover {
   text-decoration: none;
   color: black;
 }
+
+.hero-image {
+  width: 100%;
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 89%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0%, 100% 89%, 0% 100%);
+  -webkit-mask-image:-webkit-gradient(linear, left bottom, left top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+  margin-bottom: 5em;
+  height: 40em;
+  object-fit: cover;
+}
