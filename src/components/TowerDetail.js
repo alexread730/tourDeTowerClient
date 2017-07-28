@@ -27,7 +27,7 @@ class TowerDetail extends Component {
       <Container>
         <Row className="tower-detail">
           <Col md="6">
-            <img src={tower.image_url} className="large-image-cropper" />
+            <img src={tower.image_url} className="large-image-cropper" alt={tower.name}/>
           </Col>
           <Col md="6">
             <div>
@@ -36,6 +36,7 @@ class TowerDetail extends Component {
               <h4>Height: {tower.height_meter} [m] | {tower.height_feet} [ft]</h4>
               <h4>Stories: {tower.stories}</h4>
               <p>{tower.description}</p>
+              <a href="/"><Button>Book Now</Button></a>
             </div>
           </Col>
         </Row>

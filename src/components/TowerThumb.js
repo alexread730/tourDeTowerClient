@@ -2,25 +2,15 @@ import React, {Component} from 'react';
 import {
   Card,
   CardImg,
-  CardText,
   CardBlock,
   CardTitle,
-  CardSubtitle,
-  Button,
   Col,
   Row
 } from 'reactstrap';
 
 import {Link} from 'react-router-dom';
 
-import TowerDetail from './TowerDetail';
-
 class TowerThumb extends Component {
-  constructor(props) {
-    super(props);
-
-  }
-
   render() {
     const towerCards = this.props.towers.map((tower, index) => {
       return (
