@@ -17,8 +17,10 @@ const AppRoute = () => {
   return (
     <Router>
       <div>
-        <Route path="/" component={App} />
-        <Route path="/tower/:id" component={TowerDetail} />
+        <Switch>
+          <Route path="/towers/:id" component={TowerDetail} />
+          <Route path="/" component={App} />
+        </Switch>
       </div>
     </Router>
   );

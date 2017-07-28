@@ -42,11 +42,35 @@ main {
 
 p {
   margin: 0;
-  padding: 1em;
+  padding: 1em 0;
 }
 
 .image-cropper {
   height: 200px;
   width: 100%;
   object-fit: cover;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.tower-card {
+  margin-bottom: 2em;
+}
+
+.large-image-cropper {
+  height: 600px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.tower-detail {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+a:hover {
+  text-decoration: none;
+  color: black;
 }
