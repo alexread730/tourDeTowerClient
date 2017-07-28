@@ -30,12 +30,11 @@ class TowerThumb extends Component {
             </CardBlock>
           </Card>
         </Col>
-
       );
     });
+
     return (
       <Row>
-
         {towerCards}
       </Row>
     );

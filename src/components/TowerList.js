@@ -13,12 +13,7 @@ class TowerList extends Component {
     console.log(this.props.towers);
     return (
       <Container>
-        
-
-          <TowerThumb towers={this.props.towers}/>
-
-
-
+        <TowerThumb towers={this.props.towers}/>
       </Container>
     );
   }
